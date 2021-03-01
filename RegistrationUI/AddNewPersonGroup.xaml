@@ -1,0 +1,39 @@
+﻿<Window x:Class="RegistrationUI.AddNewPersonGroup"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegistrationUI"
+        mc:Ignorable="d"
+        Title="AddNewPersonGroup" Height="550" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Name="Idlabel" Content="Id" Grid.Row="0" Margin="-3,45,0,55"/>
+        <Label Name="Namelabel" Content="Name *" Grid.Row="1" Margin="1,5,160.667,95.667" Grid.ColumnSpan="2"/>
+        <Label Name="UserDatalabel" Content="User data (optional)" Grid.Row="1" Margin="0,100,161.667,0.667" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="IdTextBox" Grid.ColumnSpan="3" Margin="10,75,161.333,0" />
+        <TextBox x:Name="NameTextBox" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,30,164.333,45.667" />
+        <TextBox x:Name="UserDataTextBox" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,130,164.333,75.667" Grid.RowSpan="2" />
+        <Label Grid.Row="3" Name="MyLabel" Margin="5"/>
+        <ComboBox Name="RecognitionComboBox"  Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,104.333,164.333,101.667" Grid.RowSpan="2">
+            <ComboBoxItem Content="V01"></ComboBoxItem>
+            <ComboBoxItem Content="V0 (Improved accuracy)"></ComboBoxItem>
+        </ComboBox>
+        <Button x:Name="CancelButton" Content="Cancel" HorizontalAlignment="Left" Margin="94,53.333,0,0" Grid.Row="3" VerticalAlignment="Top" Width="96" Height="41" Grid.ColumnSpan="2"/>
+        <Button x:Name="CreateGroupButton" Content="Create Group" HorizontalAlignment="Left" Margin="141,53.333,0,0" Grid.Row="3" VerticalAlignment="Top" Width="110" Height="41" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Image Margin="1.333,75,112.333,1" Source="Image1.png" Stretch="Fill" RenderTransformOrigin="7.657,1.944" Grid.Column="2"/>
+        <Image Margin="0.333,40,120.333,45.667" Source="Image2.png" Stretch="Fill"  Grid.Column="2" Grid.Row="1"/>
+        <Image Margin="0.333,10.333,120.333,84.667" Source="Image3.png" Stretch="Fill" RenderTransformOrigin="6.364,6" Grid.Column="2" Grid.Row="2"/>
+
+    </Grid>
+</Window>
